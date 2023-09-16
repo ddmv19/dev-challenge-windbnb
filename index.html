@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/triangleLogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windbnb</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main id="main">
+      <header class="header">
+        <img src="./public/logo.svg" alt="logo">
+        <div class="search-container">
+          <section>
+            <span id="city">Whole</span>, 
+            <span id="country">Finland</span>
+          </section>
+          <section id="actual-guests">
+            Add guets
+          </section>
+          <img src="./public/icon-search.svg" alt="search-img">
+        </div>
+      </header>
+      <section class="main-content">
+        <header class="header">
+          <h2>Stay in Finland</h2>
+          <span id="quantity-results">+12 stays</span>
+        </header>
+        <div class="results-container">
+        </div>
+      </section>
+      <footer class="footer">
+        <span>Created by <a href="https://github.com/ddmv19">ddmv19</a> - devChallenges.io</span>
+      </footer>
+    </main>
+    <div id="edit-search" class="">
+      <header class="header">
+        <h4>Edit your search</h4>
+        <figure>
+          <img src="./public/cross.svg" alt="close-svg" id="close-svg">
+        </figure>
+      </header>
+      <div class="options-container">
+        <section class="locations-options active">
+          Location
+          <span id="location">Helsinki, Finland</span>
+        </section>
+        <section class="guests-options">
+          Guest
+          <span id="guests">0</span>
+        </section>
+        <button id="btn-search">Search</button>
+      </div>
+      <div class="options-locations-guests">
+        <nav class="options active" id="options-locations">
+          <section>
+            <figure>
+              <img src="./public/location.svg" alt="">
+            </figure>
+            Helsinki, Finland
+          </section>
+          <section>
+            <figure>
+              <img src="./public/location.svg" alt="">
+            </figure>
+            Turku, Finland
+          </section>
+          <section>
+            <figure>
+              <img src="./public/location.svg" alt="">
+            </figure>
+            Vaasa, Finland
+          </section>
+          <section>
+            <figure>
+              <img src="./public/location.svg" alt="">
+            </figure>
+            Oulu, Finland
+          </section>
+          </ul>
+        </nav>
+        <nav class="options" id="options-guests">
+          <section>
+            <h4>Adult</h4>
+            <p>Age 13 or above</p>
+            <div class="guests-quantity">
+              <div class="more">
+                +
+              </div>
+              <span id="quantity-adults">0</span>
+              <div class="less">
+                -
+              </div>
+            </div>
+          </section>
+          <section>
+            <h4>Children</h4>
+            <p>Age 2-12</p>
+            <div class="guests-quantity">
+              <div class="more">
+                +
+              </div>
+              <span id="quantity-childrens">0</span>
+              <div class="less">
+                -
+              </div>
+            </div>
+          </section>
+        </nav>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
